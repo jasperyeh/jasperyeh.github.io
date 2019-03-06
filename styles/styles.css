@@ -2,6 +2,11 @@
 	font-family: 'Asap';
 }
 
+hr {
+	border-width: 2px;
+	border-color: #3d5a80;
+}
+
 /* Split the screen in half */
 .split {
 	height: 100%;
@@ -10,6 +15,7 @@
 	z-index: 1;
 	top: 0;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	padding-top: 20px;
 }
 
@@ -33,12 +39,20 @@ p {
 }
 
 /* If you want the content centered horizontally and vertically */
-.centered {
+.left-centered {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+.right-centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: left;
 }
 
 .profiles a {
@@ -47,7 +61,7 @@ p {
 }
 /* Style the image inside the centered container, if needed */
 #headshot {
-	width: 100%;
+	width: 70%;
 	border-radius: 50%;
 }
 
