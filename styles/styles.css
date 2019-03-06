@@ -1,5 +1,8 @@
-/* Split the screen in half */
+* {
+	font-family: 'Asap';
+}
 
+/* Split the screen in half */
 .split {
 	height: 100%;
 	width: 50%;
@@ -38,12 +41,16 @@ p {
 	text-align: center;
 }
 
+.profiles a {
+	display: inline-block;
+	padding: 5px;
+}
 /* Style the image inside the centered container, if needed */
-.centered img {
+#headshot {
 	width: 100%;
 	border-radius: 50%;
 }
 
 #about-me {
-	color: #0f1f35;
+	color: #3d5a80;
 }
