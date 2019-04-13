@@ -1,32 +1,40 @@
+@media (min-width: 1280px) {
+	.split {
+		display: flexbox;
+		height: 100%;
+		width: 50%;
+		position: fixed;
+		/* z-index: 1; */
+		top: 0;
+		padding-top: 20px;
+	}
+
+	.left {
+		flex: 1;
+		order: 1;
+		left: 0;
+		background-color: #0f1f35;
+		color: oldlace;
+	}
+
+	/* Control the right side */
+	.right {
+		flex: 1;
+		order: 2;
+		right: 0;
+		background-color: oldlace;
+		overflow-x: visible;
+		overflow-y: scroll;
+		color: #3d5a80;
+	}
+}
 * {
 	font-family: 'Asap';
 }
 
 /* Split the screen in half */
-.split {
-	height: 100%;
-	width: 50%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	padding-top: 20px;
-}
 
 /* Control the left side */
-.left {
-	left: 0;
-	background-color: #0f1f35;
-	color: oldlace;
-}
-
-/* Control the right side */
-.right {
-	right: 0;
-	background-color: oldlace;
-	overflow-x: visible;
-	overflow-y: scroll;
-	color: #3d5a80;
-}
 
 /* If you want the content centered horizontally and vertically */
 .left-centered {
